@@ -8,11 +8,11 @@ int main () {
 
     cout << "Sequencia com "<< N<< " numeros: " << "1, 1";
 
-    int pre = 1;
-    int pre_pre = 1;
+    long long pre = 1;
+    long long pre_pre = 1;
 
     for (int i = 0; i < N - 2; i++) {
-        int current = pre + pre_pre;
+        long long current = pre + pre_pre;
         cout << ", " << current;
 
         pre_pre = pre;
