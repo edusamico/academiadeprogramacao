@@ -2,7 +2,6 @@
 using namespace std;
 int main () {
     int N;
-
     cout << "informe o numero (inteiro) de alunos" << endl;
     cin >> N;
 

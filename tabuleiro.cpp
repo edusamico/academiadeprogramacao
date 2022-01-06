@@ -6,7 +6,6 @@ int main () {
     cout << "informe o tamanho (inteiro) do tabuleiro" << endl;
     cin >> N;
 
-    //tem que ser par
     if (N % 2 == 0){
         for (int row = 0; row < N; row++) {
             for (int col = 0; col < N; col++) {
