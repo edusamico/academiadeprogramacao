@@ -1,6 +1,22 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+
+
+void selection_sort (int x[], int N) {
+    for (int i = 0; i < N; i = i + 1) {
+            int new_min_position = i;
+            for (int j = i + 1; j < N; j = j + 1) {
+                if (x[j] < x[new_min_position]) {
+                    new_min_position = j;
+                }
+            }
+            int temp = x[i];
+                x[i] = x[new_min_position];
+                x[new_min_position] = temp;
+        }
+}
+
 int main () {
     int N;
     cout << "Informe o tamanho da lista:" << endl;
@@ -12,17 +28,8 @@ int main () {
     for (int i = 0; i < N; i = i + 1) {
         cin >> x[i];
     }
-    for (int i = 0; i < N; i = i + 1) {
-        int new_min_position = i;
-        for (int j = i + 1; j < N; j = j + 1) {
-            if (x[j] < x[new_min_position]) {
-                new_min_position = j;
-            }
-        }
-        int temp = x[i];
-            x[i] = x[new_min_position];
-            x[new_min_position] = temp;
-    }
+    
+    selection_sort (x, N);
 
     for (int i = 0; i < N; i++) {
         if (i > 0) {
