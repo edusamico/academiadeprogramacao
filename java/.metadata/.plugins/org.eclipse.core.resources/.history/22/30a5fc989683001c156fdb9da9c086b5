@@ -1,0 +1,11 @@
+package main;
+
+public class Main {
+	
+	public static void main (String[] args) {
+		Book book = new Book("Java como programar", 100.0f, "Bookman");
+		
+		System.out.println(book.toString());
+		}
+	
+}

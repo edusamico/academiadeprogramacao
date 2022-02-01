@@ -1,0 +1,17 @@
+package inheritance;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main (String[] args) {
+		System.out.println("digite um número");
+		try (Scanner scanner = new Scanner(System.in)){
+			int N = scanner.nextInt();
+			if (Numbers.isPrime(N)) {
+				System.out.println("O número é primo");
+			} else {
+				System.out.println("O número não é primo");
+			}
+		}
+	}
+}

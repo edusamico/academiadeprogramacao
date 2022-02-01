@@ -1,0 +1,8 @@
+package main;
+
+public class Pencil extends Item {
+	public Pencil{
+		super (name, price);	
+	}
+	
+}

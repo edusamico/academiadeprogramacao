@@ -1,0 +1,15 @@
+package main;
+
+public class Store {
+	private Item[] myItems;
+	private int quantItems; 
+	public Store() {
+		myItems = new Item[50];
+		quantItems = 0;
+	}
+	
+	public void addItem(Item newItem) {
+		myItems[quantItems] = newItem;
+		quantItems++;
+	}
+}

@@ -1,0 +1,18 @@
+package main;
+
+public static class Book extends Item {
+	private String publisher;
+	
+	public Book (String name, float price, String publisher) {
+		super(name, price);
+		this.publisher = publisher;
+	}
+	
+	public String getPublisher () {
+		return publisher;
+	}
+	
+	public String toString () {
+		return getName() + " - " + getPublisher() + " - " + getPrice() + " reais.";
+	}
+}
