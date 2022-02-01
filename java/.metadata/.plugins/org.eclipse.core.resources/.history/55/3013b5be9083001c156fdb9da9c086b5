@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+import main.Numbers;
+
+public class Main {
+	
+	public static void main (String[] args) {
+		Scanner scanner = new scanner (System.in);
+		
+		Numbers numbers = new Numbers();
+		
+		System.out.println("digite um número");
+		
+		int N = scanner.nextInt();
+		
+		if (numbers.isPrime(N)) {
+			System.out.println("O número é primo");
+		} else {
+			System.out.println("O número não é primo");
+		}
+	}
+}
