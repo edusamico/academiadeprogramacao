@@ -21,18 +21,8 @@ public class Store {
 		quantItems++;
 	}
 	
-	public void sellItem3 (Item item) {
-		try {
-			sellItem2(item);
-		} catch (ItemNotFoundException e) {
-			System.out.println("***********************************************");
-			System.out.println("**************a exceção foi lançada************");
-			System.out.println("***************mas o programa NÃO**************");
-			System.out.println("***************será interrompido!**************");
-			System.out.println("***********************************************");
-			
-			
-		}
+	public void sellItem3 (Item item) throws ItemNotFoundException {
+		sellItem2(item);
 	}
 	
 	public void sellItem2 (Item item) throws ItemNotFoundException {

@@ -25,11 +25,11 @@ public class Store {
 		try {
 			sellItem2(item);
 		} catch (ItemNotFoundException e) {
-			System.out.println("***********************************************");
-			System.out.println("**************a exceção foi lançada************");
-			System.out.println("***************mas o programa NÃO**************");
-			System.out.println("***************será interrompido!**************");
-			System.out.println("***********************************************");
+			System.out.println("*****************a exceção foi lançada");
+			System.out.println("*****************(não tem produto");
+			System.out.println("***************** mas o programa não será interrompido");
+			System.out.println("***************** só pelo exercício!");
+			System.out.println("*****************");
 			
 			
 		}

@@ -25,12 +25,7 @@ public class Store {
 		try {
 			sellItem2(item);
 		} catch (ItemNotFoundException e) {
-			System.out.println("***********************************************");
-			System.out.println("**************a exceção foi lançada************");
-			System.out.println("***************mas o programa NÃO**************");
-			System.out.println("***************será interrompido!**************");
-			System.out.println("***********************************************");
-			
+			System.out.println("a exceção foi lançada (não tem produto) mas o programa não será interrompido");
 			
 		}
 	}

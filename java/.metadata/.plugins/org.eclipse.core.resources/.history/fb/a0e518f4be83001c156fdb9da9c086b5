@@ -16,28 +16,13 @@ public class Main {
 			myStore.addItem(new Pencil("Lapis na promo", 2.5f));
 		}
 		
-		System.out.println("------ITENS DISPONÍVES------");
 		System.out.println(myStore.toString());
 		
 		System.out.println("O livro de Java será vendido");
-		System.out.println("------------------------------");
-		myStore.sellItem3(bookJava);
 		
-		System.out.println("Livro vendido");
-		System.out.println("------------------------------");
-		
-		System.out.println("------ITENS DISPONÍVES------");
-		System.out.println(myStore.toString());
-		
-	
-		System.out.println("O livro de Java será vendido novamente");
-		System.out.println("------------------------------");
-		myStore.sellItem3(bookJava);
-		
-		System.out.println("Livro vendido novamente");
-		System.out.println("------------------------------");
+		System.out.println("_____________________________");
+		myStore.sellItem(bookJava);
 
-		System.out.println("------ITENS DISPONÍVES------");
 		System.out.println(myStore.toString());
 		
 		
