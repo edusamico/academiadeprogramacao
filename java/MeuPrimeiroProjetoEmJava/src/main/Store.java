@@ -1,6 +1,6 @@
 package main;
 
-public class Store<T extends Item> {
+public class Store<T extends Item> implements Iterable<T> {
 	private Item[] myItems;
 	private int quantItems; 
 	
@@ -56,6 +56,10 @@ public class Store<T extends Item> {
 			} 
 			quantItems--;
 		}
+	}
+	
+	public Iterator <T> iterator () {
+		return new Iterator<T>((T[]) myItems, quantItems);
 	}
 	
 	public String toString() {

@@ -1,0 +1,84 @@
+package main;
+
+public class Main {
+	
+	public static void main (String[] args) {
+		Vector<String> myVector = new Vector<>();
+		
+		myVector.addItem("Borracha");
+		myVector.addItem("Quadro Branco");
+		myVector.addItem("Caneta");
+		
+		Iterator <String> it = myVector.iterator();
+		
+		new Printer<>(it).printAll();
+		
+		Store<Book> myBookStore = new Store<>();
+		myBookStore.addItem(new Book("Java como programar", 100.0f, "Bookman"));
+		myBookStore.addItem(new Book("C++ como programar", 120.0f, "Bookman"));
+		
+		Iterator<Book> itBooks = myBookStore.iterator();
+		
+		new Printer<>(itBooks).PrintAll();
+		
+		
+		myVector.printAll();
+	}
+		
+		
+//		Book bookJava = new Book("Java como programar", 100.0f, "Bookman");
+//		Book bookC = new Book("C++ como programar", 120.0f, "Bookman");
+//		Pencil pencil = new Pencil("Lapis", 5.0f);
+//		
+//		Store<Item> myStore = new Store<>();
+//		myStore.addItem(bookJava);
+//		myStore.addItem(bookC);
+//		myStore.addItem(pencil);
+//		
+//		Store<Book> myBookStore = new Store<>();
+//		myBookStore.addItem(bookJava);
+//		myBookStore.addItem(bookC);
+//		
+//		System.out.println(myStore.toString());
+//		System.out.println(myBookStore.toString());
+//
+//		
+//		for (int i = 0; i < 3; i++) {
+//			myStore.addItem(new Pencil("Lapis na promo", 2.5f));
+//		}
+//		
+//		System.out.println("------ITENS DISPONÍVES------");
+//		System.out.println(myStore.toString());
+//		
+//		System.out.println("O livro de Java será vendido");
+//		System.out.println("------------------------------");
+//		myStore.sellItem3(bookJava);
+//		
+//		System.out.println("Livro vendido");
+//		System.out.println("------------------------------");
+//		
+//		System.out.println("------ITENS DISPONÍVES------");
+//		System.out.println(myStore.toString());
+//		
+//	
+//		System.out.println("O livro de Java será vendido novamente");
+//		System.out.println("------------------------------");
+//		myStore.sellItem3(bookJava);
+//		
+//		System.out.println("Livro vendido novamente");
+//		System.out.println("------------------------------");
+//
+//		System.out.println("------ITENS DISPONÍVES------");
+//		System.out.println(myStore.toString());
+//		
+//	
+//		Item[] myStore = new Item [3];
+//		myStore[0] = bookJava;
+//		myStore[1] = bookC;
+//		myStore[2] = pencil;
+//		
+//		for (int i = 0; i < 3; i++) {
+//			System.out.println(myStore[i].toString());
+//		}
+	
+}

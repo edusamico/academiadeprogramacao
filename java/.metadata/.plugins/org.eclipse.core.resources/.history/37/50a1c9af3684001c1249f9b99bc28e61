@@ -1,0 +1,17 @@
+package main;
+
+public class Printer <T> {
+	private Iterable<T> iterable;
+	
+	public Printer (Iterable<T> it) {
+		this.iterable = it;
+	}
+	
+	public void PrintAll() {
+		Iterator<T> myIterator = it.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.next().toString());
+		}
+	}
+
+}
