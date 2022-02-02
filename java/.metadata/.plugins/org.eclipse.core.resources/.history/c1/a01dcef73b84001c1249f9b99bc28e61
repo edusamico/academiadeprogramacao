@@ -1,8 +1,6 @@
 package main;
 
-import java.io.Serializable;
-
-public class Store<T extends Item> implements Iterable<T>, Serializable {
+public class Store<T extends Item> implements Iterable<T> {
 	private Item[] myItems;
 	private int quantItems; 
 	

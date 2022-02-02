@@ -1,6 +1,5 @@
 package main;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -24,25 +23,22 @@ public class Main {
 //		myBookStore.addItem(new Book("C++ como programar", 120.0f, "Bookman"));
 //		
 //		new Printer<>(myBookStore).printAll();
+//		
+//		System.out.println("=============");
 		
 		try {
-
-			ObjectInputStream input = new ObjectInputStream(new FileInputStream("src/output.txt"));
-			Store <Book> myBookStore = (Store<Book>) input.readObject();
-			input.close();
-			
-			new Printer<Book>(myBookStore).printAll();
-
 //			ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("src/output.txt"));
-//			output.writeObject(myBookStore);
+//			output.writeInt(32);
 //			output.close();
+			
+			ObjectInputStream input = new ObjectInputStream(new FileInputStream("src/output.txt"));
+			int a = input.readInt();
+			input.close();
+			System.out.println(a);
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

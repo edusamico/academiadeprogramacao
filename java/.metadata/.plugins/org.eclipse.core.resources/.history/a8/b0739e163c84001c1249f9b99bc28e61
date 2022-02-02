@@ -1,8 +1,6 @@
 package main;
 
-import java.io.Serializable;
-
-public abstract class Item implements Serializable {
+public abstract class Item {
 	private String name;
 	private float price;
 	
