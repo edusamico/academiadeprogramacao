@@ -1,7 +1,7 @@
 package main;
 
 public class Store<T extends Item> {
-	private Item[] myItems;
+	private Object[] myItems;
 	private int quantItems; 
 	
 	public Store() {
@@ -9,7 +9,7 @@ public class Store<T extends Item> {
 		quantItems = 0;
 	}
 	
-	public void addItem(T newItem) {
+	public void add(T newItem) {
 		if (quantItems == myItems.length) {
 			Item [] myNewArray = new Item [myItems.length * 2];
 			for (int i = 0; i < quantItems; i++) {
@@ -37,10 +37,10 @@ public class Store<T extends Item> {
 	}
 	
 	public void sellItem2 (Item item) throws ItemNotFoundException {
-		sellItem(item);
+		sell(item);
 	}
 	
-	public void sellItem (Item item) throws ItemNotFoundException {
+	public void sell (Item item) throws ItemNotFoundException {
 		int position = -1;
 		for (int i = 0; i < quantItems; i++) {
 			if (item == myItems[i]) {

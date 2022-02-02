@@ -1,15 +1,14 @@
 package main;
 
-public class Store<T extends Item> {
+public class Store {
 	private Item[] myItems;
 	private int quantItems; 
-	
 	public Store() {
 		myItems = new Item[3];
 		quantItems = 0;
 	}
 	
-	public void addItem(T newItem) {
+	public void addItem(Item newItem) {
 		if (quantItems == myItems.length) {
 			Item [] myNewArray = new Item [myItems.length * 2];
 			for (int i = 0; i < quantItems; i++) {
@@ -22,9 +21,9 @@ public class Store<T extends Item> {
 		quantItems++;
 	}
 	
-	public void sellItem3 (T sale) {
+	public void sellItem3 (Item item) {
 		try {
-			sellItem2(sale);
+			sellItem2(item);
 		} catch (ItemNotFoundException e) {
 			System.out.println("***********************************************");
 			System.out.println("**************a exceção foi lançada************");

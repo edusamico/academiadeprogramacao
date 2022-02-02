@@ -8,7 +8,7 @@ public class Main {
 		for (int i = 0; i < 100; i++) {
 			myVector.addItem("biscoito");
 		}
-		myVector.printAll();
+		System.out.println(myVector.toString());
 		
 //		Book bookJava = new Book("Java como programar", 100.0f, "Bookman");
 //		Book bookC = new Book("C++ como programar", 120.0f, "Bookman");

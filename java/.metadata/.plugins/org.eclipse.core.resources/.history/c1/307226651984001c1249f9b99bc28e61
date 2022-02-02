@@ -1,15 +1,14 @@
 package main;
 
-public class Store<T extends Item> {
-	private Item[] myItems;
+public class Store<T> {
+	private Object[] myItems;
 	private int quantItems; 
-	
 	public Store() {
-		myItems = new Item[3];
+		myItems = new Object[3];
 		quantItems = 0;
 	}
 	
-	public void addItem(T newItem) {
+	public void add(T new) {
 		if (quantItems == myItems.length) {
 			Item [] myNewArray = new Item [myItems.length * 2];
 			for (int i = 0; i < quantItems; i++) {
@@ -18,7 +17,7 @@ public class Store<T extends Item> {
 			myItems = myNewArray;
 			
 		}
-		myItems[quantItems] = newItem;
+		myItems[quantItems] = new;
 		quantItems++;
 	}
 	

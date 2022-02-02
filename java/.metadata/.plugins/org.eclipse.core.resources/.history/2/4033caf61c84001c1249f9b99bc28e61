@@ -5,11 +5,6 @@ public class Main {
 	public static void main (String[] args) {
 		Vector<String> myVector = new Vector<>();
 		
-		for (int i = 0; i < 100; i++) {
-			myVector.addItem("biscoito");
-		}
-		myVector.printAll();
-		
 //		Book bookJava = new Book("Java como programar", 100.0f, "Bookman");
 //		Book bookC = new Book("C++ como programar", 120.0f, "Bookman");
 //		Pencil pencil = new Pencil("Lapis", 5.0f);
@@ -23,10 +18,10 @@ public class Main {
 //		myBookStore.addItem(bookJava);
 //		myBookStore.addItem(bookC);
 //		
-//		System.out.println(myStore.toString());
-//		System.out.println(myBookStore.toString());
-//
-//		
+		System.out.println(myStore.toString());
+		System.out.println(myBookStore.toString());
+
+		
 //		for (int i = 0; i < 3; i++) {
 //			myStore.addItem(new Pencil("Lapis na promo", 2.5f));
 //		}

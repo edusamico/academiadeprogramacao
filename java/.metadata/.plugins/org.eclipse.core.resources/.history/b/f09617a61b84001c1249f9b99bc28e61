@@ -9,7 +9,7 @@ public class Store<T extends Item> {
 		quantItems = 0;
 	}
 	
-	public void addItem(T newItem) {
+	public void add(T newItem) {
 		if (quantItems == myItems.length) {
 			Item [] myNewArray = new Item [myItems.length * 2];
 			for (int i = 0; i < quantItems; i++) {
